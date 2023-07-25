@@ -868,14 +868,14 @@ imageRenderer:
     ## @param imageRenderer.service.loadBalancerIP loadBalancerIP if Grafana service type is `LoadBalancer` (optional, cloud specific)
     ## ref: https://kubernetes.io/docs/user-guide/services/#type-loadbalancer
     ##
-    loadBalancerIP: ""
+    ## loadBalancerIP: ""
     ## @param imageRenderer.service.loadBalancerSourceRanges loadBalancerSourceRanges if Grafana service type is `LoadBalancer` (optional, cloud specific)
     ## ref: https://kubernetes.io/docs/user-guide/services/#type-loadbalancer
     ## e.g:
     ## loadBalancerSourceRanges:
     ##   - 10.10.10.0/24
     ##
-    loadBalancerSourceRanges: []
+    ## loadBalancerSourceRanges: []
     ## @param imageRenderer.service.annotations Provide any additional annotations which may be required.
     ## This can be used to set the LoadBalancer service type to internal only.
     ## ref: https://kubernetes.io/docs/concepts/services-networking/service/#internal-load-balancer
