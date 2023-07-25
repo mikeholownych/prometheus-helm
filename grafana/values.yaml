@@ -511,7 +511,7 @@ serviceAccount:
 service:
   ## @param service.type Kubernetes Service type
   ##
-  # type: LoadBalancer
+  ## type: LoadBalancer
   type: clusterIP
   ## @param service.clusterIP Grafana service Cluster IP
   ## e.g.:
@@ -530,14 +530,14 @@ service:
   ## @param service.loadBalancerIP loadBalancerIP if Grafana service type is `LoadBalancer` (optional, cloud specific)
   ## ref: https://kubernetes.io/docs/user-guide/services/#type-loadbalancer
   ##
-  loadBalancerIP: ""
+  ## loadBalancerIP: ""
   ## @param service.loadBalancerSourceRanges loadBalancerSourceRanges if Grafana service type is `LoadBalancer` (optional, cloud specific)
   ## ref: https://kubernetes.io/docs/user-guide/services/#type-loadbalancer
   ## e.g:
   ## loadBalancerSourceRanges:
   ##   - 10.10.10.0/24
   ##
-  loadBalancerSourceRanges: []
+  ## loadBalancerSourceRanges: []
   ## @param service.annotations Provide any additional annotations which may be required.
   ## This can be used to set the LoadBalancer service type to internal only.
   ## ref: https://kubernetes.io/docs/concepts/services-networking/service/#internal-load-balancer
