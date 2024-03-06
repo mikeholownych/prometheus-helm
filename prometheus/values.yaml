@@ -1428,6 +1428,10 @@ serverFiles:
         static_configs:
           - targets:
             - 10.1.1.1:3000
+      - job_name: node-exporter
+        static_configs:
+          - targets:
+            - prometheus-node-exporter.svc.k8s-prod-toronto-01.holownych.com:9100
       # A scrape configuration for running Prometheus on a Kubernetes cluster.
       # This uses separate scrape configs for cluster components (i.e. API server, node)
       # and services to allow each to use different authentication configs.
