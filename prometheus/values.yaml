@@ -1424,10 +1424,6 @@ serverFiles:
         static_configs:
           - targets:
             - localhost:9090
-      - job_name: ux-us-identity-pod
-        metrics_path: '/actuator/prometheus'
-        static_configs:
-          - targets: ['us-ux-identity-service.tunki.svc.cluster.local:8080']
 
       # A scrape configuration for running Prometheus on a Kubernetes cluster.
       # This uses separate scrape configs for cluster components (i.e. API server, node)
